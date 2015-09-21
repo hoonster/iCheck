@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+            android:id="@+id/resultbs5_r0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    
+    <TextView
+            android:id="@+id/resultbs5_r2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    
+    <TextView
+            android:id="@+id/resultbs5_r8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+     <ImageView
+        android:id="@+id/img5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="animation" />
+     
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" > 
+
+        <TextView
+            android:id="@+id/bacResultbs5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignBaseline="@+id/bacValuebs5"
+            android:layout_toLeftOf="@+id/bacValuebs5"
+            android:text="구취농도는 "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/bacValuebs5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/percentbs5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignBaseline="@+id/bacValuebs5"
+            android:layout_toRightOf="@+id/bacValuebs5"
+            android:text=" %"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/testAgainbs5"
+            style="@style/btnStyleBeige"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:text="Again" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/video6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <VideoView
+            android:id="@+id/videoView5"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+    
+    <TextView
+            android:id="@+id/resultAl5_r0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    
+    <TextView
+            android:id="@+id/resultAl5_r2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    
+    <TextView
+            android:id="@+id/resultAl5_r8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/video6" >
+
+        <TextView
+            android:id="@+id/bacResult5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bacValue5"
+            android:layout_toLeftOf="@+id/bacValue5"
+            android:text="BAC is "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/bacValue5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/percental5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bacValue5"
+            android:layout_toRightOf="@+id/bacValue5"
+            android:text=" %"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/testAgain5"
+            style="@style/btnStyleSeagull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bacValue5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Again" />
+    </RelativeLayout>
+
+</RelativeLayout>

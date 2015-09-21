@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <VideoView
+            android:id="@+id/videoViewbs"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/somedatabs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="0sp" />
+
+    <TextView
+        android:id="@+id/somedatabs1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffff"
+        android:textSize="0sp" />
+
+    <TextView
+        android:id="@+id/somedatabs2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#ffffff"
+        android:textSize="0sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/video" >
+
+        <TextView
+            android:id="@+id/gettingReady1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/progressBarTwo1"
+            android:layout_below="@+id/progressBarTwo1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="Getting ready..."
+            android:textSize="20sp" />
+
+        <com.toh.iCheck.ProgressWheel
+            android:id="@+id/progressBarTwo1"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            ProgressWheel:barColor="#339BB9"
+            ProgressWheel:barLength="60dp"
+            ProgressWheel:barWidth="10dp"
+            ProgressWheel:contourColor="#339BB9"
+            ProgressWheel:rimColor="#44000000"
+            ProgressWheel:rimColorInside="#339BB9"
+            ProgressWheel:rimColorOutside="#339BB9"
+            ProgressWheel:rimWidth="10dp"
+            ProgressWheel:spinSpeed="3dp"
+            ProgressWheel:textColor="#ffffff"
+            ProgressWheel:textSize="55sp" />
+
+        <TextView
+            android:id="@+id/textViewbs"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_above="@+id/progressBarTwo1"
+            android:layout_marginTop="0dp"
+            android:text="L"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewbs4"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/textViewbs2"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="animation" />
+
+</RelativeLayout>
